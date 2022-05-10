@@ -1,11 +1,12 @@
 import React from 'react'
+import './Header.css'
 
 class Header extends React.Component {
 
   render() {
     return (
       <header>
-        Gallery of Horns
+        <h1>Gallery of Horns</h1>
       </header>
     );
   }

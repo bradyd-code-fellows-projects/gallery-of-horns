@@ -1,4 +1,5 @@
 import React from 'react';
+import './HornedBeasts.css'
 
 class HornedBeast extends React.Component {
   render() {
