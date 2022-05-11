@@ -2,7 +2,14 @@ body {
   background-color: rgb(223, 220, 245);
 }
 
+Main {
+  margin: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 img {
-  height: 400px;
-  width: 400px;
+  height: 15vw;
+  width: 15vw;
 }
