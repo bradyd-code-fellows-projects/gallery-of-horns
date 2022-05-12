@@ -1,0 +1,11 @@
+article {
+  border: solid 2px black;
+  margin: 25px 0;
+}
+
+#voteCounter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
