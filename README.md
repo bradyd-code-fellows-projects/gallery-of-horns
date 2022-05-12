@@ -37,4 +37,33 @@ This is Brady's first project of Code Fellows Code 301 and first experience usin
   * Finish: 5:32
   * Actual time to complete: 40 min
 
+## Lab 03
+
+### Feature added 11 May 2022
+
+* Display a Modal
+  * Est time to complete: 45min
+  * Start: 4:25
+  * Finish: 6:05
+  * Actual time to complete: 1.5 hours
+* Stretch goal: Fuzzy search
+  * Est time to complete: -
+  * Start: -
+  * Finish: -
+  * Actual time to complete: -
+
+<!--
+
+## Lab
+
+### Features added 
+
+*
+  * Est time to complete:
+  * Start:
+  * Finish:
+  * Actual time to complete:
+  
+-->
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

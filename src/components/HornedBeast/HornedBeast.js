@@ -1,6 +1,7 @@
 import React from 'react';
 import './HornedBeasts.css'
 import { Card, Button, Col } from 'react-bootstrap'
+import '../SelectedBeast/SelectedBeast.js';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -17,13 +18,16 @@ class HornedBeast extends React.Component {
     });
   };
 
+  handleImgClick = () => {
+    this.props.openModalHandler(this.props.title)
+  }
 
   render() {
     return (
       <article>
         <Col className='mb-50'>
           <Card border='info' className='cards h-100'>
-            <Card.Img variant="top" src={this.props.image_url} />
+            <Card.Img onClick={this.handleImgClick} variant="top" src={this.props.image_url}/>
             <Card.Body>
               <Card.Title>{this.props.title}</Card.Title>
               <Card.Text>
