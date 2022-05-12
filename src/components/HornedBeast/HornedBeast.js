@@ -1,7 +1,7 @@
 import React from 'react';
 import './HornedBeasts.css'
 import { Card, Button, Col } from 'react-bootstrap'
-import '../SelectedBeast/SelectedBeast.js';
+import SelectedBeast from '../SelectedBeast/SelectedBeast';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -11,15 +11,14 @@ class HornedBeast extends React.Component {
     }
   }
 
-
   favoriteVote = () => {
     this.setState({
       votes: this.state.votes + 1
     });
   };
 
-  handleImgClick = () => {
-    this.props.openModalHandler(this.props.title)
+  activateModal = () => {
+    this.props.openModalHandler(this.props.title, this.props.image_url, this.props.description);
   }
 
   render() {
@@ -27,7 +26,7 @@ class HornedBeast extends React.Component {
       <article>
         <Col className='mb-50'>
           <Card border='info' className='cards h-100'>
-            <Card.Img onClick={this.handleImgClick} variant="top" src={this.props.image_url}/>
+            <Card.Img onClick={this.activateModal} variant="top" src={this.props.image_url}/>
             <Card.Body>
               <Card.Title>{this.props.title}</Card.Title>
               <Card.Text>
