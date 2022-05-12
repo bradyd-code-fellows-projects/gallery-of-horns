@@ -1,7 +1,7 @@
 import React from 'react';
 import './HornedBeasts.css'
 import { Card, Button, Col } from 'react-bootstrap'
-import '../SelectedBeast/SelectedBeast';
+import '../SelectedBeast/SelectedBeast.js';
 
 class HornedBeast extends React.Component {
   constructor(props) {

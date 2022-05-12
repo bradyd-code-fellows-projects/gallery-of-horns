@@ -1,5 +1,5 @@
 import React from 'react'
-import HornedBeast from '../HornedBeast/HornedBeast';
+import HornedBeast from '../HornedBeast/HornedBeast.js';
 import { Row, Container } from 'react-bootstrap'
 
 class Main extends React.Component {
