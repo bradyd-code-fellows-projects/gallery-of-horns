@@ -11,7 +11,8 @@ class Main extends React.Component {
         <HornedBeast
           title={beast.title}
           image_url={beast.image_url}
-          key={beast._id}
+          beastID={beast._id}
+          key={idx}
           description={beast.description}
           openModalHandler={this.props.openModalHandler}
         />)
