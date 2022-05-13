@@ -13,6 +13,7 @@ class Main extends React.Component {
           image_url={beast.image_url}
           beastID={beast._id}
           key={idx}
+          horns={beast.horns}
           description={beast.description}
           openModalHandler={this.props.openModalHandler}
         />)

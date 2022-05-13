@@ -3,8 +3,8 @@ import Header from '../Header/Header.js';
 import Main from '../Main/Main.js';
 import Footer from '../Footer/Footer.js';
 import data from '../../data/data.json'
-import HornedBeast from '../HornedBeast/HornedBeast.js';
 import SelectedBeast from '../SelectedBeast/SelectedBeast.js';
+import HornsForm from '../HornsForm/HornsForm.js';
 
 
 import '../App/App.css';
@@ -44,6 +44,9 @@ class App extends React.Component {
       <>
 
         <Header />
+        <HornsForm
+          data={data}
+        />
         <Main
           data={data}
           openModalHandler={this.openModalHandler}
