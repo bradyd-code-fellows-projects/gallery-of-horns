@@ -52,6 +52,16 @@ This is Brady's first project of Code Fellows Code 301 and first experience usin
   * Finish: -
   * Actual time to complete: -
 
+## Lab 04
+
+### Features added 12 May 2022
+
+* Form for filtering beasts by number of horns
+  * Est time to complete: 2 hours
+  * Start: 3:30
+  * Finish: 5:00
+  * Actual time to complete: 1.5 hours
+
 <!--
 
 ## Lab

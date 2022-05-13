@@ -1,7 +1,6 @@
 import React from 'react';
 import './HornedBeasts.css'
 import { Card, Button, Col } from 'react-bootstrap'
-import SelectedBeast from '../SelectedBeast/SelectedBeast';
 
 class HornedBeast extends React.Component {
   constructor(props) {
