@@ -40,31 +40,14 @@ class App extends React.Component {
   }
 
   handleSelect = (e) => {
-    let selected = e.target.value;
-    console.log(selected);
-    if (selected === '1') {
-      //return beasts with 1 horns
-      let oneHorn = data.filter(num => num.horns === 1);
-      console.log(oneHorn);
-      this.setState({ data: oneHorn })
-    } else if (selected === '2') {
-      //return beasts with 2 horns
-      let twoHorns = data.filter(num => num.horns === 2);
-      this.setState({ data: twoHorns })
-    } else if (selected === '3') {
-      //return beasts with 3 horns
-      let threeHorns = data.filter(num => num.horns === 3);
-      this.setState({ data: threeHorns })
-    } else if (selected === '100') {
-      //return beasts with 100 horns
-      let oneHundredHorns = data.filter(num => num.horns === 100);
-      this.setState({ data: oneHundredHorns })
+    let selected = parseInt(e.target.value);
+    if (!isNaN(selected)) {
+      let horns = data.filter(num => num.horns === selected);
+      this.setState({ data: horns })
     } else {
-      // return all beasts
-      this.setState({ data: data })
+      this.setState({data: data})
     }
   }
-
 
   render() {
     return (
