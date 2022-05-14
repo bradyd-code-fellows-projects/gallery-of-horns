@@ -6,13 +6,13 @@ class Main extends React.Component {
 
   render() {
 
-    let hornedBeasts = this.props.data.map((beast, idx) => {
+    let hornedBeasts = this.props.data.map((beast, beastID) => {
       return (
         <HornedBeast
           title={beast.title}
           image_url={beast.image_url}
           beastID={beast._id}
-          key={idx}
+          key={beastID}
           horns={beast.horns}
           description={beast.description}
           openModalHandler={this.props.openModalHandler}
